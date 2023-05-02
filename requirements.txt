@@ -1,0 +1,5 @@
+mediapipe==0.9.3
+opencv-python==4.7.0.72
+tqdm==4.65.0
+py-sudoku==1.0.3
+pytesseract==0.3.10
