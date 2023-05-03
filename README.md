@@ -11,10 +11,11 @@ These demos were written as a part of my presentation at McKinsey Digital Discus
 
 ```sh
 python -m venv .venv
+. .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## [Sudoku Solver](sudoku_solver.py)
+## [Sudoku Solver](src/sudoku_solver.py)
 
 ![Solved Sudoku Puzzle](sudoku_assets/solved.png)
 
@@ -23,10 +24,10 @@ Solving a Sudoku puzzle using traditional computer vision techniques. The actual
 cleanup and transformations required to get reliable OCR results from Tesseract.
 
 ```sh
-python sudoku_solver.py
+python src/sudoku_solver.py
 ```
 
-## [Hand Tracking](hand_tracking.py)
+## [Hand Tracking](src/hand_tracking.py)
 
 Using a hand pose prediction model, we can track a hand's world position and
 pose to build a digital whiteboard.
@@ -34,7 +35,7 @@ pose to build a digital whiteboard.
 Simply raise your hand and pinch your index finger and thumb to draw on the screen.
 
 ```sh
-python hand_tracking.py
+python src/hand_tracking.py
 ```
 
 You may need to modify the camera index (`cv2.VideoCapture(index)`) on line 64 if you have
